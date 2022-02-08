@@ -1,23 +1,23 @@
 {
     "name": "easybanker",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "",
     "main": "index.js",
     "type": "module",
     "scripts": {
-	"test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
     },
     "repository": {
-      "type": "git",
-	"url": "git+https://github.com/Jack17432/easybanker.git"
+        "type": "git",
+        "url": "git+https://github.com/Jack17432/easybanker.git"
     },
     "author": "Christopher Graham",
     "license": "ISC",
     "bugs": {
-	"url": "https://github.com/Jack17432/easybanker/issues"
+        "url": "https://github.com/Jack17432/easybanker/issues"
     },
     "homepage": "https://github.com/Jack17432/easybanker#readme",
-    "dependencies": {
-	"jest": "^27.5.1"
+    "devDependencies": {
+        "jest": "^27.5.1"
     }
 }
