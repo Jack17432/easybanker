@@ -1,0 +1,80 @@
+<OFC>
+  <DTD>2
+  <CPAGE>1252
+  <ACCTSTMT>
+    <ACCTFROM>
+      <BANKID>Download
+      <ACCTID>38-9019-0563955-00
+      <ACCTTYPE>1
+    </ACCTFROM>
+    <STMTRS>
+      <DTSTART>20220131
+      <DTEND>20220209
+      <LEDGER>18.74
+            <STMTTRN>
+        <TRNTYPE>0		
+        <DTPOSTED>20220131		
+        <TRNAMT>1800.00
+        <FITID>31Jan2022.1
+        <NAME>Bill Payment BARRETT M E 
+        <MEMO>Bill Payment BARRETT M E ;
+      </STMTTRN>
+            <STMTTRN>
+        <TRNTYPE>0		
+        <DTPOSTED>20220131		
+        <TRNAMT>-1803.67
+        <FITID>31Jan2022.2
+        <NAME>TRANSFER TO C GRAHAM - 01 
+        <MEMO>TRANSFER TO C GRAHAM - 01 ;
+      </STMTTRN>
+            <STMTTRN>
+        <TRNTYPE>0		
+        <DTPOSTED>20220131		
+        <TRNAMT>700.00
+        <FITID>31Jan2022.3
+        <NAME>TRANSFER FROM C GRAHAM - 01 
+        <MEMO>TRANSFER FROM C GRAHAM - 01 ;
+      </STMTTRN>
+            <STMTTRN>
+        <TRNTYPE>0		
+        <DTPOSTED>20220201		
+        <TRNAMT>-693.24
+        <FITID>01Feb2022.1
+        <NAME>PB TECHNOLOGIES HAMILTOHAMILTON 
+        <MEMO>PB TECHNOLOGIES HAMILTOHAMILTON ;
+      </STMTTRN>
+            <STMTTRN>
+        <TRNTYPE>0		
+        <DTPOSTED>20220204		
+        <TRNAMT>1500.00
+        <FITID>04Feb2022.1
+        <NAME>TRANSFER FROM C GRAHAM - 01 
+        <MEMO>TRANSFER FROM C GRAHAM - 01 ;
+      </STMTTRN>
+            <STMTTRN>
+        <TRNTYPE>0		
+        <DTPOSTED>20220204		
+        <TRNAMT>1000.00
+        <FITID>04Feb2022.2
+        <NAME>TRANSFER FROM C GRAHAM - 01 
+        <MEMO>TRANSFER FROM C GRAHAM - 01 ;
+      </STMTTRN>
+            <STMTTRN>
+        <TRNTYPE>0		
+        <DTPOSTED>20220204		
+        <TRNAMT>-300.00
+        <FITID>04Feb2022.3
+        <NAME>TRANSFER TO C GRAHAM - 01 
+        <MEMO>TRANSFER TO C GRAHAM - 01 ;
+      </STMTTRN>
+            <STMTTRN>
+        <TRNTYPE>0		
+        <DTPOSTED>20220205		
+        <TRNAMT>-2188.02
+        <FITID>05Feb2022.1
+        <NAME>PB TECHNOLOGIES HAMILTOHAMILTON 
+        <MEMO>PB TECHNOLOGIES HAMILTOHAMILTON ;
+      </STMTTRN>
+       </STMTRS>
+  </ACCTSTMT>
+</OFC>

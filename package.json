@@ -1,7 +1,8 @@
 {
     "name": "easybanker",
-    "version": "1.0.1",
-    "description": "",
+    "version": "1.0.2",
+    "description": "This package is all about tying to make it easy to get data from finacial files.",
+    "keywords": "files, parse, js, es6, data, read, QIF",
     "main": "index.js",
     "type": "module",
     "scripts": {
@@ -12,7 +13,7 @@
         "url": "git+https://github.com/Jack17432/easybanker.git"
     },
     "author": "Christopher Graham",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/Jack17432/easybanker/issues"
     },

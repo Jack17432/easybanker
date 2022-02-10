@@ -58,3 +58,15 @@ describe('parse QIF', () => {
     });
     
 });
+
+describe('parse OFC', () => {
+
+    test.todo('Valid ACCTFROM data');
+
+    test.todo('Vaild DT range');
+
+    test.todo('Vaild account ballance');
+    
+    test.todo('Valid STMTTRN feilds');
+
+});
