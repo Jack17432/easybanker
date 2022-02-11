@@ -1,72 +1,27 @@
-import { parse_QIF } from '../src/parse.js';
+import { read_QIF_File } from '../src/parse.js';
+import { readFileSync } from 'fs';
 
-describe('parse QIF', () => {
+describe('read QIF file', () => {
 
+    const QIF_ref = JSON.parse(readFileSync('./tests/test_files/test_QIF_JSON.json', 'utf8'));
     const QIF_file_location = './tests/test_files/test_QIF.QIF';
-    
-    const data = parse_QIF(QIF_file_location);
-    
-    test('Valid type', () => {
+    let QIF;
 
-	expect(data.type).toBe('Bank');
+    beforeEach(() => {
+	
+	QIF = read_QIF_File(QIF_file_location);
 	
     });
 
-    test('Valid dates', () => {
+    test('Prased correct !Type', () => {
 
-	expect(data.date).toEqual([
-	    '31/01/22',
-	    '31/01/22',
-	    '31/01/22',
-	    '01/02/22',
-	    '04/02/22',
-	    '04/02/22',
-	    '04/02/22',
-	    '05/02/22'
-	]);
-	
-    });
-
-    test('Valid memo', () => {
-
-	expect(data.memo).toEqual([
-	    'Bill Payment PERSON ;',
-	    'TRANSFER TO PERSON ;',
-	    'TRANSFER FROM PERSON ;',
-	    'COMPONEY ;',
-	    'TRANSFER FROM person ;',
-	    'TRANSFER FROM PERSON ;',
-	    'TRANSFER TO PERSON ;',
-	    'COMPONEY ;'
-	]);
-	
-    });
-
-    test('Valid transfer ammount', () => {
-
-	expect(data.ammount).toEqual([
-	    1800.00,
-	    -1803.67,
-	    700.00,
-	    -693.24,
-	    1500.00,
-	    1000.00,
-	    -300.00,
-	    -2188.02
-	]);
+	expect(QIF.Type).toBe(QIF_ref.Type);
 
     });
-    
-});
 
-describe('parse OFC', () => {
+    test('Parsed all statements correctly', () => {
 
-    test.todo('Valid ACCTFROM data');
+	expect(QIF.statement).toBe(QIF.statement);
 
-    test.todo('Vaild DT range');
-
-    test.todo('Vaild account ballance');
-    
-    test.todo('Valid STMTTRN feilds');
-
+    });
 });

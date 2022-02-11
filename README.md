@@ -4,26 +4,49 @@ This package is all about tying to make it easy to get data from finacial files.
 
 ## Parse Functions
 
-### parse_QIF
+### read_QIF_File
 
 #### documentation
 Summary: Takes QIF file and returns data contained.
 
-@since 1.0.1
+@since 1.0.0
 @access public
 
 @param {String}   file_path       Takes path to QIF file.
 
-@return {Object}  data                Object of data contained in file.
+@return {JSON}  data                JSON of data contained in file.
 
-data = {
-	'type'    : "String",
-	'date'    : [String],
-	'memo'    : [String],
- 	'ammount' : [float]
+#### JSON Example:
+~~~
+{
+	"Type":"Bank",
+	"statement":[
+		{
+			"D":"6/ 1/94",
+			"T":"-1,000.00",
+			"N":"1005",
+			"P":"Bank Of Mortgage",
+			"L":"[linda]",
+			"S":["[linda]","Mort Int"],
+			"$":["-253.64","-746.36"]},
+		{
+			"D":"6/ 2/94",
+			"T":"75.00",
+			"P":"Deposit"
+		},
+		{
+			"D":"6/ 3/94",
+			"T":"-10.00",
+			"P":"JoBob Biggs",
+			"M":"J.B. gets bucks",
+			"L":"Entertain",
+			"A":["1010 Rodeo Dr.","Waco, Tx","80505","","",""]
+		}
+	]
 }
+~~~
 
-#### Example: 
+#### Usecase Example: 
 ~~~ 
 import { parse_QIF } from 'easybanker'
 
